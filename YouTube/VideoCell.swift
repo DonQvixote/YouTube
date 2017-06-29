@@ -8,15 +8,7 @@
 
 import UIKit
 
-class VideoCell: UICollectionViewCell {
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setupViews()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+class VideoCell: BaseCell {
     
     let thumbnailImageView: UIImageView = {
         let imageView = UIImageView()
@@ -50,13 +42,15 @@ class VideoCell: UICollectionViewCell {
     let subtitleTextView: UITextView = {
         let textView = UITextView()
         textView.translatesAutoresizingMaskIntoConstraints = false
-        textView.text = "TaylorSwiftVEVO · 1,605,684,607 views · 2 years ago"
+        textView.text = "TaylorSwiftVEVO • 1,605,684,607 views • 2 years ago"
         textView.textContainerInset = UIEdgeInsetsMake(0, -4, 0, 0)
         textView.textColor = UIColor.lightGray
         return textView
     }()
     
-    func setupViews() {
+    override func setupViews() {
+        super.setupViews()
+        
         addSubview(thumbnailImageView)
         addSubview(separatorView)
         addSubview(userProfileImageView)
