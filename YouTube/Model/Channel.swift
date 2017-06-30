@@ -10,5 +10,5 @@ import UIKit
 
 class Channel: NSObject {
     var name: String?
-    var profileImageName: String?
+    var profileImageURL: String?
 }

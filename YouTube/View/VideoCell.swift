@@ -12,12 +12,9 @@ class VideoCell: BaseCell {
     var video: Video? {
         didSet {
             titleLabel.text = video?.title
-            if let thumbnailImageName = video?.thumbnailImageName {
-                thumbnailImageView.image = UIImage(named: thumbnailImageName)
-            }
-            if let profileImageName = video?.channel?.profileImageName {
-                userProfileImageView.image = UIImage(named: profileImageName)
-            }
+            
+            setupThumbnailImage()
+            setupProfileImage()
             
             if let channelName = video?.channel?.name, let numberOfViews = video?.numberOfViews {
                 let numberFormatter = NumberFormatter()
@@ -37,19 +34,20 @@ class VideoCell: BaseCell {
         }
     }
     
-    let thumbnailImageView: UIImageView = {
-        let imageView = UIImageView()
+    let thumbnailImageView: CustomImageView = {
+        let imageView = CustomImageView()
         imageView.image = UIImage(named: "taylor_swift_blank_space")
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
         return imageView
     }()
     
-    let userProfileImageView: UIImageView = {
-        let imageView = UIImageView()
+    let userProfileImageView: CustomImageView = {
+        let imageView = CustomImageView()
         imageView.image = UIImage(named: "taylor_swift_profile")
         imageView.layer.cornerRadius = 22
         imageView.layer.masksToBounds = true
+        imageView.contentMode = .scaleAspectFill
         return imageView
     }()
     
@@ -78,6 +76,18 @@ class VideoCell: BaseCell {
         textView.textColor = UIColor.lightGray
         return textView
     }()
+    
+    func setupThumbnailImage() {
+        if let thumbnailImageURL = video?.thumbnailImageURL {
+            thumbnailImageView.loadImageUsingUrlString(thumbnailImageURL)
+        }
+    }
+    
+    func setupProfileImage() {
+        if let profileImageURL = video?.channel?.profileImageURL {
+            userProfileImageView.loadImageUsingUrlString(profileImageURL)
+        }
+    }
     
     override func setupViews() {
         super.setupViews()
