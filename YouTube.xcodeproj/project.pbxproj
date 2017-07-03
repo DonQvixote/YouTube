@@ -17,6 +17,8 @@
 		0E4B62581F0510F400C26376 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4B62571F0510F400C26376 /* Video.swift */; };
 		0E4B625C1F052BD500C26376 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4B625B1F052BD500C26376 /* Channel.swift */; };
 		0E4B62621F0705F900C26376 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4B62611F0705F900C26376 /* CustomImageView.swift */; };
+		0E4B62641F07897E00C26376 /* SettingsLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4B62631F07897E00C26376 /* SettingsLauncher.swift */; };
+		0E4B62661F07915700C26376 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4B62651F07915700C26376 /* SettingsCell.swift */; };
 		0E7550D71F04856200B48FCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7550D61F04856200B48FCC /* AppDelegate.swift */; };
 		0E7550DC1F04856200B48FCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E7550DA1F04856200B48FCC /* Main.storyboard */; };
 		0E7550DE1F04856200B48FCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E7550DD1F04856200B48FCC /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 		0E4B62571F0510F400C26376 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Video.swift; path = Model/Video.swift; sourceTree = "<group>"; };
 		0E4B625B1F052BD500C26376 /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Channel.swift; path = Model/Channel.swift; sourceTree = "<group>"; };
 		0E4B62611F0705F900C26376 /* CustomImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomImageView.swift; path = View/CustomImageView.swift; sourceTree = "<group>"; };
+		0E4B62631F07897E00C26376 /* SettingsLauncher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsLauncher.swift; path = Controller/SettingsLauncher.swift; sourceTree = "<group>"; };
+		0E4B62651F07915700C26376 /* SettingsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsCell.swift; path = View/SettingsCell.swift; sourceTree = "<group>"; };
 		0E7550D31F04856200B48FCC /* YouTube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E7550D61F04856200B48FCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E7550DB1F04856200B48FCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -70,6 +74,7 @@
 				0E4B62481F04F93700C26376 /* MenuBar.swift */,
 				0E4B62491F04F93700C26376 /* MenuCell.swift */,
 				0E4B624A1F04F93700C26376 /* VideoCell.swift */,
+				0E4B62651F07915700C26376 /* SettingsCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -78,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				0E4B62461F04F91E00C26376 /* HomeController.swift */,
+				0E4B62631F07897E00C26376 /* SettingsLauncher.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -200,10 +206,12 @@
 				0E4B625C1F052BD500C26376 /* Channel.swift in Sources */,
 				0E7550D71F04856200B48FCC /* AppDelegate.swift in Sources */,
 				0E4B62551F04F96B00C26376 /* UIView+extension.swift in Sources */,
+				0E4B62661F07915700C26376 /* SettingsCell.swift in Sources */,
 				0E4B624B1F04F93700C26376 /* MenuBar.swift in Sources */,
 				0E4B62581F0510F400C26376 /* Video.swift in Sources */,
 				0E4B62541F04F96B00C26376 /* UIColor+extension.swift in Sources */,
 				0E4B62621F0705F900C26376 /* CustomImageView.swift in Sources */,
+				0E4B62641F07897E00C26376 /* SettingsLauncher.swift in Sources */,
 				0E4B62471F04F91E00C26376 /* HomeController.swift in Sources */,
 				0E4B624F1F04F95000C26376 /* BaseCell.swift in Sources */,
 				0E4B624D1F04F93700C26376 /* VideoCell.swift in Sources */,

@@ -17,12 +17,20 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
         return mb
     }()
     
+    lazy var settingsLauncher: SettingsLauncher = {
+        let launcher = SettingsLauncher()
+        launcher.homeController = self
+        return launcher
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         fetchVideos()
         
         navigationItem.title = "Home"
+        navigationController?.navigationBar.tintColor = UIColor.white
+        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         navigationController?.navigationBar.isTranslucent = false
         
         let titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: view.frame.width - 32, height: view.frame.height))
@@ -84,12 +92,19 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
         navigationItem.rightBarButtonItems = [moreBarButtonItem, searchBarButtonItem]
     }
     
+    func handleMore() {
+        settingsLauncher.showSettings()
+    }
+    
     func handleSearch() {
         print("search")
     }
     
-    func handleMore() {
-        print("more")
+    func showSettingsController(_ title: String?) {
+        let dummySettingsController = UIViewController()
+        dummySettingsController.navigationItem.title = title
+        dummySettingsController.view.backgroundColor = UIColor.white
+        navigationController?.pushViewController(dummySettingsController, animated: true)
     }
     
     private func setupMenuBar() {
