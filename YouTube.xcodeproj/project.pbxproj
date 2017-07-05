@@ -28,6 +28,8 @@
 		0E91989B1F0C5F4A005AEF63 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9198991F0C5F4A005AEF63 /* FeedCell.swift */; };
 		0E91989C1F0C5F4A005AEF63 /* TrendingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E91989A1F0C5F4A005AEF63 /* TrendingCell.swift */; };
 		0E91989E1F0CCC20005AEF63 /* SafeJsonObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E91989D1F0CCC20005AEF63 /* SafeJsonObject.swift */; };
+		0E9198A01F0CD5DB005AEF63 /* VideoLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E91989F1F0CD5DB005AEF63 /* VideoLauncher.swift */; };
+		0E9198A21F0CD88C005AEF63 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9198A11F0CD88C005AEF63 /* VideoPlayerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		0E9198991F0C5F4A005AEF63 /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedCell.swift; path = View/FeedCell.swift; sourceTree = "<group>"; };
 		0E91989A1F0C5F4A005AEF63 /* TrendingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrendingCell.swift; path = View/TrendingCell.swift; sourceTree = "<group>"; };
 		0E91989D1F0CCC20005AEF63 /* SafeJsonObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SafeJsonObject.swift; path = Model/SafeJsonObject.swift; sourceTree = "<group>"; };
+		0E91989F1F0CD5DB005AEF63 /* VideoLauncher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoLauncher.swift; path = View/VideoLauncher.swift; sourceTree = "<group>"; };
+		0E9198A11F0CD88C005AEF63 /* VideoPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoPlayerView.swift; path = View/VideoPlayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,8 @@
 				0E4B624A1F04F93700C26376 /* VideoCell.swift */,
 				0E4B62651F07915700C26376 /* SettingsCell.swift */,
 				0E9198971F0C5F16005AEF63 /* SubscriptionsCell.swift */,
+				0E91989F1F0CD5DB005AEF63 /* VideoLauncher.swift */,
+				0E9198A11F0CD88C005AEF63 /* VideoPlayerView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -231,6 +237,7 @@
 				0E4B62551F04F96B00C26376 /* UIView+extension.swift in Sources */,
 				0E4B62661F07915700C26376 /* SettingsCell.swift in Sources */,
 				0E9198961F0C570A005AEF63 /* APIService.swift in Sources */,
+				0E9198A01F0CD5DB005AEF63 /* VideoLauncher.swift in Sources */,
 				0E4B624B1F04F93700C26376 /* MenuBar.swift in Sources */,
 				0E4B62581F0510F400C26376 /* Video.swift in Sources */,
 				0E4B62541F04F96B00C26376 /* UIColor+extension.swift in Sources */,
@@ -243,6 +250,7 @@
 				0E91989C1F0C5F4A005AEF63 /* TrendingCell.swift in Sources */,
 				0E4B624D1F04F93700C26376 /* VideoCell.swift in Sources */,
 				0E91989E1F0CCC20005AEF63 /* SafeJsonObject.swift in Sources */,
+				0E9198A21F0CD88C005AEF63 /* VideoPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
