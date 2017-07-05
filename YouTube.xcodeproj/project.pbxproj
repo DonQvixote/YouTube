@@ -23,6 +23,11 @@
 		0E7550DC1F04856200B48FCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E7550DA1F04856200B48FCC /* Main.storyboard */; };
 		0E7550DE1F04856200B48FCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E7550DD1F04856200B48FCC /* Assets.xcassets */; };
 		0E7550E11F04856200B48FCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E7550DF1F04856200B48FCC /* LaunchScreen.storyboard */; };
+		0E9198961F0C570A005AEF63 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9198951F0C570A005AEF63 /* APIService.swift */; };
+		0E9198981F0C5F16005AEF63 /* SubscriptionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9198971F0C5F16005AEF63 /* SubscriptionsCell.swift */; };
+		0E91989B1F0C5F4A005AEF63 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9198991F0C5F4A005AEF63 /* FeedCell.swift */; };
+		0E91989C1F0C5F4A005AEF63 /* TrendingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E91989A1F0C5F4A005AEF63 /* TrendingCell.swift */; };
+		0E91989E1F0CCC20005AEF63 /* SafeJsonObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E91989D1F0CCC20005AEF63 /* SafeJsonObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +49,11 @@
 		0E7550DD1F04856200B48FCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E7550E01F04856200B48FCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E7550E21F04856200B48FCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E9198951F0C570A005AEF63 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIService.swift; path = APIService/APIService.swift; sourceTree = "<group>"; };
+		0E9198971F0C5F16005AEF63 /* SubscriptionsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubscriptionsCell.swift; path = View/SubscriptionsCell.swift; sourceTree = "<group>"; };
+		0E9198991F0C5F4A005AEF63 /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedCell.swift; path = View/FeedCell.swift; sourceTree = "<group>"; };
+		0E91989A1F0C5F4A005AEF63 /* TrendingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrendingCell.swift; path = View/TrendingCell.swift; sourceTree = "<group>"; };
+		0E91989D1F0CCC20005AEF63 /* SafeJsonObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SafeJsonObject.swift; path = Model/SafeJsonObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,12 +79,15 @@
 		0E4B623E1F04B04800C26376 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0E9198991F0C5F4A005AEF63 /* FeedCell.swift */,
+				0E91989A1F0C5F4A005AEF63 /* TrendingCell.swift */,
 				0E4B62611F0705F900C26376 /* CustomImageView.swift */,
 				0E4B624E1F04F95000C26376 /* BaseCell.swift */,
 				0E4B62481F04F93700C26376 /* MenuBar.swift */,
 				0E4B62491F04F93700C26376 /* MenuCell.swift */,
 				0E4B624A1F04F93700C26376 /* VideoCell.swift */,
 				0E4B62651F07915700C26376 /* SettingsCell.swift */,
+				0E9198971F0C5F16005AEF63 /* SubscriptionsCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -93,6 +106,7 @@
 			children = (
 				0E4B625B1F052BD500C26376 /* Channel.swift */,
 				0E4B62571F0510F400C26376 /* Video.swift */,
+				0E91989D1F0CCC20005AEF63 /* SafeJsonObject.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -116,6 +130,7 @@
 		0E7550D51F04856200B48FCC /* YouTube */ = {
 			isa = PBXGroup;
 			children = (
+				0E9198941F0C56EA005AEF63 /* APIService */,
 				0E4B62561F0510E100C26376 /* Model */,
 				0E4B623F1F04B05A00C26376 /* Controller */,
 				0E4B623E1F04B04800C26376 /* View */,
@@ -127,6 +142,14 @@
 				0E7550E21F04856200B48FCC /* Info.plist */,
 			);
 			path = YouTube;
+			sourceTree = "<group>";
+		};
+		0E9198941F0C56EA005AEF63 /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				0E9198951F0C570A005AEF63 /* APIService.swift */,
+			);
+			name = APIService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,14 +230,19 @@
 				0E7550D71F04856200B48FCC /* AppDelegate.swift in Sources */,
 				0E4B62551F04F96B00C26376 /* UIView+extension.swift in Sources */,
 				0E4B62661F07915700C26376 /* SettingsCell.swift in Sources */,
+				0E9198961F0C570A005AEF63 /* APIService.swift in Sources */,
 				0E4B624B1F04F93700C26376 /* MenuBar.swift in Sources */,
 				0E4B62581F0510F400C26376 /* Video.swift in Sources */,
 				0E4B62541F04F96B00C26376 /* UIColor+extension.swift in Sources */,
 				0E4B62621F0705F900C26376 /* CustomImageView.swift in Sources */,
 				0E4B62641F07897E00C26376 /* SettingsLauncher.swift in Sources */,
 				0E4B62471F04F91E00C26376 /* HomeController.swift in Sources */,
+				0E9198981F0C5F16005AEF63 /* SubscriptionsCell.swift in Sources */,
+				0E91989B1F0C5F4A005AEF63 /* FeedCell.swift in Sources */,
 				0E4B624F1F04F95000C26376 /* BaseCell.swift in Sources */,
+				0E91989C1F0C5F4A005AEF63 /* TrendingCell.swift in Sources */,
 				0E4B624D1F04F93700C26376 /* VideoCell.swift in Sources */,
+				0E91989E1F0CCC20005AEF63 /* SafeJsonObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
